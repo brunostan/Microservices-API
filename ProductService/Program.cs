@@ -1,4 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using ProductService.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ProductServiceContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProductServiceContext") ?? throw new InvalidOperationException("Connection string 'ProductServiceContext' not found.")));
 
 // Add services to the container.
 
