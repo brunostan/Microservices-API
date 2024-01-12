@@ -14,6 +14,6 @@ namespace ProductService.Data
         {
         }
 
-        public DbSet<BusinessObjects.Product> Product { get; set; } = default!;
+        public DbSet<Product> Product { get; set; } = default!;
     }
 }

@@ -3,7 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using OrderService.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<OrderServiceContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("OrderServiceContext") ?? throw new InvalidOperationException("Connection string 'OrderServiceContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OrderServiceContext")
+    ?? throw new InvalidOperationException("Connection string 'OrderServiceContext' not found.")));
 
 // Add services to the container.
 
@@ -22,9 +23,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

@@ -14,6 +14,6 @@ namespace CustomerService.Data
         {
         }
 
-        public DbSet<BusinessObjects.Customer> Customer { get; set; } = default!;
+        public DbSet<Customer> Customer { get; set; } = default!;
     }
 }

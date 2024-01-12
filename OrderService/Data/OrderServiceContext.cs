@@ -14,6 +14,6 @@ namespace OrderService.Data
         {
         }
 
-        public DbSet<BusinessObjects.Order> Order { get; set; } = default!;
+        public DbSet<Order> Order { get; set; } = default!;
     }
 }
