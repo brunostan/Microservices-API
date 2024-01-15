@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService", "ProductSe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{D8E76000-DA47-4021-8DC0-CAEE31459821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce-APIGateway", "Ecommerce-APIGateway\Ecommerce-APIGateway.csproj", "{62084C2F-67C9-476F-8E3C-4E81418D90D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v", "Ecommerce-APIGateway\v.csproj", "{62084C2F-67C9-476F-8E3C-4E81418D90D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
