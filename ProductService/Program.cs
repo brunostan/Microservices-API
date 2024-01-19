@@ -2,12 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using ProductService.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProductServiceContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ProductServiceContext") ?? throw new InvalidOperationException("Connection string 'ProductServiceContext' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProductServiceContext")
+    ?? throw new InvalidOperationException("Connection string 'ProductServiceContext' not found.")));
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -21,9 +20,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();
