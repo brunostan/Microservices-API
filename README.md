@@ -1,4 +1,4 @@
-# Microservices-API — E-commerce de exemplo (C#/.NET)
+# Microservices-API — E-commerce (C#/.NET)
 
 Solução em **microsserviços** para um domínio simples de e-commerce. Inclui um **API Gateway** e três serviços independentes (**Produtos**, **Pedidos** e **Clientes**) além de uma biblioteca de **objetos de domínio/DTOs** compartilhados. Foco em separação de responsabilidades, baixo acoplamento e facilidade de evolução.
 
